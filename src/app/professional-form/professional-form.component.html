@@ -1,0 +1,25 @@
+<fieldset>
+  <h4>Basic Information</h4>
+
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" [(ngModel)]="prof.name" name="name">
+  </div>
+  <!-- /.form-group -->
+
+  <div class="form-group">
+    <label>Basic Location</label>
+    <textarea class="form-control" rows="6" [(ngModel)]="prof.addressLine" name="addressLine"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>Contact Number</label>
+    <input type="text" class="form-control" [(ngModel)]="prof.mobile" name="mobile">
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-primary bt-lg" (click)="save()">Save & Go to next tab</button>
+  </div>
+
+  <!-- /.form-group -->
+</fieldset>

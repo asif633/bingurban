@@ -1,0 +1,24 @@
+<div class="card" *ngIf="category">
+    <div class="card-image small no-line" [ngStyle]="{'background-image': 'url(assets/img/tmp/subcats/'+category.id+'.jpg)'}">
+    <!--<div class="card-image small no-line" 
+        [ngStyle]="{
+          'background-image': url('assets/img/tmp/category-1.jpg')}"> -->
+      <a (click)="chooseSubcategory(category.$key)"></a>
+
+      <div class="card-image-icon">
+        <i class="md-icon">{{category.icon}}</i>
+      </div><!-- /.card-image-icon -->
+
+      <div class="card-image-count">
+        <strong>14</strong>
+        <span>professionals</span>
+      </div><!-- /.card-image-count -->
+    </div><!-- /.card-image -->
+
+    <div class="card-content">
+      <p>{{category.name}}</p>
+      <!--<h2>
+        <a class="btn btn-transparent" (click)="chooseSubcategory(category.$key)">Show All</a>
+      </h2>-->
+    </div><!-- /.card-content -->
+</div><!-- /.card -->

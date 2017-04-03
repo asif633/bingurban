@@ -1,0 +1,13 @@
+<div class="content-boxes">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-2" *ngFor="let cat of categories">
+          <app-category [category]="cat" (chosenCategory)="getCategory($event)"></app-category>
+      </div>
+      <hr>
+      <!-- /.col-* -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>

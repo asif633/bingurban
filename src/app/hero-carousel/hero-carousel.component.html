@@ -1,0 +1,28 @@
+<div class="hero-carousel" class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">
+	<ul class="uk-slideshow">
+		<li class="hero-carousel-item" *ngFor="let cat of categories; let i = index;">
+
+			<div class="hero-image" [ngStyle]="{'background-image': 'url(assets/img/tmp/gallery/'+(i+1)+'.jpg)'}"
+			
+			></div>
+			<!-- /.hero-image -->
+
+			<div class="hero-carousel-title">
+				<div class="container">
+					<div class="hero-carousel-title-inner">
+						<h1>{{cat.name}}</h1>
+						<a [routerLink]="['/category', cat.$key]" class="btn btn-primary">Show More</a>
+					</div>
+					<!-- /.hero-carousel-title-inner -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.hero-carousel-title -->
+		</li>
+		<!-- /.hero-carousel-item -->
+
+	</ul>
+	<a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+	<a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+</div>
+<!-- /.hero-carousel -->

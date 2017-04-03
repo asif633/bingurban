@@ -1,0 +1,33 @@
+<div *ngIf="product">
+  <fieldset>
+    <legend>Subcfategory Details</legend>
+    <div class="form-group">
+      <label for="id">Id</label>
+      <input readonly type="text" class="form-control" id="id" placeholder="Enter id" [(ngModel)]="product.id" name="id">
+    </div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" [(ngModel)]="product.name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="id">Category</label>
+      <select class="form-control" id="exampleSelect1" [(ngModel)]="product.categoryKey">
+          <option [ngValue]="cat.$key" *ngFor="let cat of categories">
+            {{cat.name}}
+          </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="id">Icon</label>
+      <input type="text" class="form-control" id="description" placeholder="Enter Icon" [(ngModel)]="product.icon"
+        name="icon">
+    </div>
+    <div *ngIf="newProd==false">
+      <button type="submit" class="btn btn-primary" (click)="updateProd()">Update</button>
+      <button type="submit" class="btn btn-danger" (click)="deleteProd()">Delete</button>
+    </div>
+    <div *ngIf="newProd==true">
+      <button type="submit" class="btn btn-primary" (click)="addNew()">Add</button>
+    </div>
+  </fieldset>
+</div>

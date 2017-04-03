@@ -1,0 +1,226 @@
+/* You can add global styles to this file, and also import other style files */
+/**
+ *
+ * [Table of contents]
+ *
+ * 01. Bootstrap
+ * 02. Common classes
+ * 03. Elements
+ * 04. Buttons
+ * 05. Forms
+ * 06. Image
+ * 07. Header
+ * 08. Footer
+ * 09. Hero
+ * 10. Card
+ * 11. Call to action
+ * 12. Counters
+ * 13. Structure
+ * 14. Pagination
+ * 15. Filters
+ * 16. Map
+ * 17. Alerts
+ * 18. FAQ
+ * 19. Invoice
+ * 20. Posts
+ * 21. Comments
+ * 22. Widgets
+ * 23. Listing detail
+ * 24. Pricing
+ * 25. Partners
+ * 26. Content box
+ * 27. Customizer
+ * 28. Reviews
+ * 29. Admin
+ */
+@import "helpers/variables";
+@import "../bower_components/uikit/scss/uikit-mixins.scss";
+@import "../bower_components/uikit/scss/uikit-variables.scss";
+$icon-font-path: "../node_modules/font-awesome/fonts";
+@import "../bower_components/uikit/scss/uikit.scss";
+@import "../bower_components/uikit/scss/core/grid.scss";
+@import "../bower_components/uikit/scss/components/slideshow.scss";
+@import "../bower_components/uikit/scss/components/slider.scss";
+@import "../bower_components/uikit/scss/components/slidenav.scss";
+
+/**
+ * 1. Bootstrap
+ */
+@import "../bower_components/bootstrap/scss/bootstrap";
+
+/**
+ * 2. Common classes
+ */
+@import 'helpers/commons'; 
+
+/**
+ * 3. Elements
+ */
+@import 'helpers/elements';
+
+/**
+ * 4. Buttons
+ */
+@import 'helpers/buttons';
+
+/**
+ * 5. Forms
+ */
+@import 'helpers/forms';
+
+/**
+ * 6. Image
+ */
+@import 'helpers/image';
+
+/**
+ * 7. Header
+ */
+@import 'helpers/header'; 
+
+/**
+ * 8. Footer
+ */
+@import 'helpers/footer'; 
+
+/**
+ * 9. Hero
+ */
+@import 'helpers/hero'; 
+
+/**
+ * 10. Card
+ */
+@import 'helpers/card';
+
+/**
+ * 11. Call to action
+ */
+@import 'helpers/cta';
+
+/**
+ * 12. Counters
+ */
+@import 'helpers/counters'; 
+
+/**
+ * 13. Structure
+ */
+@import 'helpers/structure';  
+
+/**
+ * 14. Pagination
+ */
+@import 'helpers/pagination'; 
+
+/**
+ * 15. Filters
+ */
+@import 'helpers/filters'; 
+
+/**
+ * 16. Map
+ */
+@import 'helpers/map';   
+@import 'helpers/map_leaflet';   
+
+/**
+ * 17. Alerts
+ */
+@import 'helpers/alerts';   
+
+/**
+ * 18. FAQ
+ */
+@import 'helpers/faq';   
+
+/**
+ * 19. Invoice
+ */
+@import 'helpers/invoice';
+
+/**
+ * 20. Posts
+ */
+@import 'helpers/posts';
+
+/**
+ * 21. Comments
+ */
+@import 'helpers/comments'; 
+
+/**
+ * 22. Widgets
+ */
+@import 'helpers/widgets'; 
+
+/**
+ * 23. Listing detail
+ */
+@import 'helpers/listing_detail'; 
+
+/**
+ * 24. Pricing
+ */
+@import 'helpers/pricing';
+
+/**
+ * 25. Partners
+ */
+@import 'helpers/partners';
+
+/**
+ * 26. Content box
+ */
+@import 'helpers/content_box';
+
+/**
+ * 27. Customizer
+ */
+@import 'helpers/customizer';
+
+/**
+ * 28. Reviews
+ */
+@import 'helpers/reviews';
+
+/**
+ * 29. Admin
+ */
+@import 'helpers/admin'; 
+@import 'helpers/admin_box'; 
+@import 'helpers/admin_posts'; 
+@import 'helpers/admin_stats'; 
+@import 'helpers/admin_reviews'; 
+
+.content-box{
+    text-align: center;
+    cursor: pointer;
+}
+.content-box p{
+    color: $color-primary;
+}
+
+.content-box:hover{
+    i {
+        color: $color-secondary;
+    }
+    p{
+        color: $color-secondary;
+    }
+}
+
+.uk-slidenav-previous{
+    left: -30px;
+}
+.uk-slidenav-next{
+    right: -35px;
+}
+
+.uk-slidenav-position .uk-slidenav{
+    top: 50%;
+}
+
+
+
+

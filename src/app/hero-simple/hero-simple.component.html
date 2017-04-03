@@ -1,0 +1,12 @@
+<div class="hero hero-animate hidden-md-down" [ngStyle]="{'background-image': 'url(assets/img/tmp/gallery/'+category.id+'.jpg)'}">
+  <div class="hero-content text-center">
+    <div class="container">
+      <h1>{{category.name}}</h1>
+    </div>
+    <!-- /.container -->
+  </div>
+  <div class="hero-form" data-uk-sticky="{top:-300, animation: 'uk-animation-slide-top'}">
+      <app-cat-container></app-cat-container>
+  </div>
+</div>
+<!-- /.hero-carousel -->

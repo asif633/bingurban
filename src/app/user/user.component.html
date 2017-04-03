@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-block">
+      <tabset [justified]="true">
+        <tab heading="Category" [disabled]="categoryDisable" [active]="categoryActive">
+          <app-category-form (doneCategory)="getCatDone($event)"></app-category-form>
+        </tab>
+        <tab heading="Primary Details" [disabled]="professionalDisable" [active]="professionalActive">
+          <app-professional-form (professionalDone)="getProfDone($event)"></app-professional-form> 
+        </tab>
+        <tab heading="Extra Details" [disabled]="profInfoDisable" [active]="profInfoActive">
+          <app-prof-info-form (profInfoDone)="getProfInfoDone($event)"></app-prof-info-form> 
+        </tab>
+        <tab heading="Upload Images" [disabled]="imageUploadDisable" [active]="imageUploadActive">
+          <app-image-upload-form></app-image-upload-form> 
+        </tab>
+      </tabset>
+    </div>
+  </div>
+</div>

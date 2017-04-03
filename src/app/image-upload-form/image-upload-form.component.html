@@ -1,0 +1,39 @@
+<h4>Profile Image Upload</h4>
+<table class="table table-striped table-hover table-bordered mt-3">
+  <thead class="thead">
+    <tr>
+      <th>#</th>
+      <th>Select Image</th>
+      <th>Image Preview</th>
+      <th>Upload Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><input type="file" imageUpload (imageSelected)="selectedProfileImage($event)" [resizeOptions]="resizeOptions"></td>
+      <td><img [src]="profileImg.src" [hidden]="!profileImg.src"><br></td>
+      <td>Upload Image</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Business Images Upload</h4>
+<table class="table table-striped table-hover table-bordered mt-3">
+  <thead class="thead">
+    <tr>
+      <th>#</th>
+      <th>Select Image</th>
+      <th>Image Preview</th>
+      <th>Upload Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of images">
+      <td>{{i.id}}</td>
+      <td><input type="file" imageUpload (imageSelected)="selectImage($event, i)" [resizeOptions]="resizeOptions"></td>
+      <td><img [src]="i.src" [hidden]="!i.src"><br></td>
+      <td>Upload Image</td>
+    </tr>
+  </tbody>
+</table>
+

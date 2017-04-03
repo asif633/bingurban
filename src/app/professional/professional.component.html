@@ -1,0 +1,32 @@
+<div class="card uk-overlay uk-overlay-hover" *ngIf="professional">
+  <div class="card-image uk-overlay-scale" style="background-image: url('assets/img/hero.jpg');">
+    <a href="listing-detail.html"></a> 
+    <div class="uk-overlay-panel uk-overlay-slide-top uk-overlay-background uk-text-center">
+            <label>{{professional.name}}</label>
+            <hr>
+            <label><i class="md-icon">location_on</i> {{professional.addressLine}}</label>
+    </div> 
+    <!--<div class="card-image-rating">
+      <i class="md-icon">star</i>
+      <i class="md-icon">star</i>
+      <i class="md-icon">star</i>
+      <i class="md-icon">star</i>
+      <i class="md-icon">star</i>
+    </div>-->
+  </div><!-- /.card-image -->
+
+  <div class="card-content">
+    <!--<h3><a href="listing-detail.html">Drink &amp; Food</a></h3>-->
+    <h2>{{professional.name}}</h2>
+    <label><i class="md-icon">location_on</i> {{professional.addressLine}}</label>
+  </div><!-- /.card-content -->
+
+  <div class="card-actions">
+    <!--<a href="listing-detail.html" class="card-action-icon"><i class="md-icon">favorite</i></a>
+    <a href="listing-detail.html" class="card-action-icon"><i class="md-icon">flag</i></a>-->
+    <a><i class="md-icon">phone</i> 32425452432</a>
+    <a (click)="chooseProfessional(professional.$key)" class="card-action-btn btn btn-transparent">Show More</a>
+  </div><!-- /.card-actions -->
+</div><!-- /.card -->
+
+

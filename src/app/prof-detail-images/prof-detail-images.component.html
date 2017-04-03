@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <hr class="mb-5">
+  <div class="row equal">
+    <div class="col-md-3 mb-4" *ngFor="let iv of [1,2,3,4,5]; let i = index">
+      <div *ngIf="i<7">
+        <a href="assets/img/tmp/gallery/3.jpg" data-uk-lightbox="{group:'group1'}" title="Title">
+          <img src="assets/img/tmp/gallery/3.jpg" width="800" height="600" alt="">
+        </a>
+      </div>
+      <div *ngIf="i==7">
+        <figure class="uk-overlay">
+          <a href="assets/img/tmp/gallery/3.jpg" data-uk-lightbox="{group:'group1'}" title="Title">
+            <img src="assets/img/tmp/gallery/3.jpg" width="800" height="600" alt="">
+            <figcaption class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
+              <div>+{{i}}</div>
+            </figcaption>
+          </a>
+        </figure>
+      </div>
+    </div>
+
+  </div>
+</div>

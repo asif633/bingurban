@@ -1,0 +1,37 @@
+<fieldset>
+  <h5>Choose Category and Subcategory</h5>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label>Category</label>
+
+        <select class="form-control" id="exampleSelect1" [ngModel]="selectedCategory" (ngModelChange)="onSelect($event)">
+      <option [ngValue]="cat" *ngFor="let cat of categories">
+        {{cat.name}}
+      </option>
+    </select>
+      </div>
+      <!-- /.form-group -->
+    </div>
+    <!-- /.col-* -->
+
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label>Subcategory</label>
+        <select class="form-control" [ngModel]="selectedSubCat" (ngModelChange)="onSubCatSelect($event)">
+					    <option [ngValue]="subcat" *ngFor="let subcat of subcategories">{{subcat.name}}</option>
+				</select>
+      </div>
+      <!-- /.form-group -->
+    </div>
+    <!-- /.col-* -->
+
+    <div class="col-sm-4">
+      <button class="btn btn-primary btn-lg" (click)="save()">Save & Go to next tab</button>
+      <!-- /.form-group -->
+    </div>
+    <!-- /.col-* -->
+  </div>
+  <!-- /.row -->
+</fieldset>

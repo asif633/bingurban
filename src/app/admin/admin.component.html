@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card">
+    <div class="card-block">
+      <tabset [justified]="true">
+        <tab heading="Category">
+          <app-category-admin-table (selectProduct)="getSelectedProduct($event)" (add)="addOrUpdate($event)"></app-category-admin-table>
+          <app-category-admin-form [product]="selectedProduct" [newProd]="addBool"></app-category-admin-form>
+        </tab>
+        <tab heading="Subcategory">
+          <app-subcategory-admin-table (selectProduct)="getSelectedProduct1($event)" (add)="addOrUpdate1($event)"></app-subcategory-admin-table>
+          <app-subcategory-admin-form [product]="selectedProduct1" [newProd]="addBool1"></app-subcategory-admin-form>
+        </tab>
+      </tabset>
+    </div>
+  </div>
+</div>

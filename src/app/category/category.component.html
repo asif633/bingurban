@@ -1,0 +1,12 @@
+<a (click)="choseCategory(category.$key)">
+<div class="content-box" *ngIf="category">
+  <div class="content-box-icon">
+    <i class="md-icon">{{category.icon}}</i>
+  </div>
+  <!-- /.content-box-icon -->
+
+  <p>{{category.name}}</p>
+
+</div>
+</a>
+<!-- /.box -->

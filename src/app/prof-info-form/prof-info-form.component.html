@@ -1,0 +1,50 @@
+<fieldset>
+	<h4>Contact Information</h4>
+
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label>Introduction</label>
+				<textarea rows="6" class="form-control" [(ngModel)]="profinfo.introduction" name="introduction"></textarea>
+			</div>
+			<!-- /.form-group -->
+		</div>
+		<!-- /.col-* -->
+
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label>Price</label>
+				<input type="text" class="form-control" [(ngModel)]="profinfo.price" name="price">
+			</div>
+			<!-- /.form-group -->
+		</div>
+		<!-- /.col-* -->
+
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label>Experience</label>
+				<input type="text" class="form-control" [(ngModel)]="profinfo.experience" name="experience">
+			</div>
+			<!-- /.form-group -->
+		</div>
+		<!-- /.col-* -->
+
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label>Website</label>
+				<input type="text" class="form-control" [(ngModel)]="profinfo.website" name="website">
+			</div>
+			<!-- /.form-group -->
+		</div>
+		<!-- /.col-* -->
+
+		<div class="col-sm-4">
+			<div class="form-group">
+				<button class="btn btn-primary btn-lg" (click)="save()">Save & go to next tab</button>
+			</div>
+			<!-- /.form-group -->
+		</div>
+
+	</div>
+
+</fieldset>

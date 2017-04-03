@@ -1,0 +1,16 @@
+<h3>{{category.name}}</h3>
+<div class="uk-slidenav-position" data-uk-slider="{infinite: false}">
+
+    <div class="uk-slider-container">
+        <ul class="uk-slider uk-grid uk-grid-small uk-grid-width-medium-1-2 uk-grid-width-large-1-4">
+            <li *ngFor="let subcat of subcategories">
+              <app-subcategory [category]="subcat" (chosenSubcategory)="getSubCategory($event)"></app-subcategory>
+            </li>
+        </ul>
+    </div>
+
+    <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slider-item="previous"></a>
+    <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slider-item="next"></a>
+
+</div>
+
